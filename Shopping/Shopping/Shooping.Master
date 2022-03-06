@@ -1,0 +1,259 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Shooping.master.cs" Inherits="Shopping.Shooping" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <script src="bootstrap/javascript/scrolltotop.js"></script>
+    <script src="bootstrap/sweetalert.min.js"></script>
+    <script src="CSS/BootScript.js"></script>
+    <script src="CSS/Ajaxapi.js"></script>
+    <%-- Custom css--%>
+    <link href="CSS/Adminstyle.css" rel="stylesheet" />
+    <link href="CSS/cst.css" rel="stylesheet" />
+    <link href="CSS/productCss.css" rel="stylesheet" />
+    <link href="CSS/cart.css" rel="stylesheet" />
+    <%-- bootsratp cs--%>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <%-- Favicon icon--%>
+
+
+    <link rel="shortcut icon" type="image/ico" href="~/images/12.ico">
+    <%-- Datatable cs--%>
+    <link href="datatable/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <%-- javascript --%>
+    <script src="CSS/sidebaradmin.js"></script>
+    <script src="bootstrap/javascript/jquery-3.3.1.slim.min.js"></script>
+    <script src="bootstrap/javascript/popper.min.js"></script>
+    <script src="bootstrap/javascript/bootstrap.min.js"></script>
+    <%-- fontawoseme cs--%>
+    <link href="fontawosome/css/all.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            left: 0px;
+            top: 0px;
+        }
+    </style>
+</head>
+
+<body onload="myFunction()">
+ 
+    <div id="loading">
+
+    </div>
+    <form id="form1" runat="server">
+        <div>
+
+            <nav class="navbar navbar-expand-lg navbar-light">
+            <asp:LinkButton class="navbar-brand" ID="LinkButton9" CausesValidation="False" runat="server" PostBackUrl="~/Home.aspx" style="text-decoration: none; color: white; font-family: 'Times New Roman'">
+                                    <i class="fas fa-shopping-cart" style="font-size: 30px; color: white"></i>
+              </asp:LinkButton>
+
+                <asp:LinkButton  ID="LinkButton11" CausesValidation="False" runat="server" PostBackUrl="~/Home.aspx" style="text-decoration: none; color: white; font-family: 'Times New Roman'">
+                                   <b>Online Shopping</b>
+              </asp:LinkButton>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto nav-fill w-100 pos ">
+                        <li class="nav-item active">
+                  <asp:LinkButton class="nav-link" ID="LinkButton5" CausesValidation="False" runat="server" PostBackUrl="~/Home.aspx">Home</asp:LinkButton>
+
+<%--                            <a class="nav-link" href="home.aspx">Home </a>--%>
+                        </li>
+                        <li class="nav-item ">
+                  <asp:LinkButton class="nav-link" ID="LinkButton6" CausesValidation="False" runat="server" PostBackUrl="~/Contact_Us.aspx"> Contact Us</asp:LinkButton>
+
+<%--                            <a class="nav-link" href="Contact_Us.aspx">Contact Us </a>--%>
+                        </li>
+                        <li class="nav-item ">
+                <asp:LinkButton class="nav-link" ID="LinkButton8" CausesValidation="False" runat="server" PostBackUrl="~/termandcondition.aspx">Term And Conditions</asp:LinkButton>
+
+<%--                            <a class="nav-link" href="termandcondition.aspx">Term And Conditions</a>--%>
+                        </li>
+                        <%-- </ul>
+           
+                        <ul class="navbar-nav" >--%>
+                        <li class="nav-item ">
+                            <asp:LinkButton PostBackUrl="~/AdminLoginpage.aspx" CausesValidation="False" class="nav-link" ID="LinkButton4" runat="server">Admin</asp:LinkButton>
+                        </li>
+                        <li class="nav-item ">
+                            <asp:LinkButton PostBackUrl="~/UserLoginPage.aspx" CausesValidation="False" class="nav-link" ID="LinkButton1" runat="server">User Login</asp:LinkButton>
+                        </li>
+                        <li class="nav-item ">
+                            <asp:LinkButton PostBackUrl="~/UserSignUpPage.aspx" CausesValidation="False" class="nav-link" ID="LinkButton2" runat="server">Sign Up</asp:LinkButton>
+                        </li>
+                         <li class="nav-item ">
+                            <asp:LinkButton class="nav-link" CausesValidation="False" Visible="False" ID="Inventory" runat="server" PostBackUrl="~/Seller/Inventory.aspx">Inventory</asp:LinkButton>
+                        </li>
+                        <li class="nav-item ">
+                            <asp:LinkButton class="nav-link" CausesValidation="False" Visible="False" ID="Orders" runat="server" PostBackUrl="~/Seller/Orders.aspx">Orders</asp:LinkButton>
+                        </li>
+                         <li class="nav-item ">
+                            <asp:LinkButton class="nav-link" CausesValidation="False" Visible="False" ID="SellerAdmin" runat="server" PostBackUrl="~/Seller/SellerAdmin.aspx">SellerAdmin</asp:LinkButton>
+                        </li>
+                        <li class="nav-item ">
+                            <asp:LinkButton class="nav-link" ID="LinkButton3" runat="server" Visible="False" CausesValidation="False" OnClick="LinkButton3_Click" >Logout</asp:LinkButton>
+                        </li>
+
+                        <li class="nav-item ">
+                            <asp:LinkButton class="nav-link" ID="LinkButton7" CausesValidation="False" runat="server"> Hello User!!</asp:LinkButton>
+
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+
+        <button onclick="topFunction()" type="button" id="myBtn" title="Go to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+
+
+        <%--    main content place holder--%>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <%--    main content place holder--%>
+
+        <br />
+        <footer id="footerSlideContainer">
+            <div class="page-footer bg-dark">
+                <div class="container text-center text-md-left pt-5" style="color: white">
+                    <div class="row">
+
+                        <div class="col-md-3 mx-auto mb-4">
+                            <h5 class="text-uppercase font-weight-bold">Providers</h5>
+                            <hr class="bg-success mb-2 mt-e d-inline-block mx-auto" style="width: 110px; height: 2px">
+                            <p class="mt-2 text-justify">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et           
+           magna aliqua. Ut enim ad minim veniam.
+                            </p>
+                        </div>
+
+                        <div class="col-md-2 mx-auto mb-4">
+                            <h5 class="text-uppercase font-weight-bold">Products</h5>
+                            <hr class="bg-success mb-2 mt-e d-inline-block mx-auto" style="width: 110px; height: 2px">
+
+                            <ul class="list-unstyled">
+                                <li class="sy-2"><a style="color: white; text-decoration: none" href="#">HTML 5</a></li>
+                                <li class="sy-2"><a style="color: white; text-decoration: none" href="#">CSS 3</a></li>
+                                <li class="sy-2"><a style="color: white; text-decoration: none" href="#">Bootstrap 4</a></li>
+                                <li class="sy-2"><a style="color: white; text-decoration: none" href="#">JavaScript</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-2 mx-auto mb-4">
+                            <h5 class="text-uppercase font-weight-bold">services</h5>
+                            <hr class="bg-success mb-2 mt-e d-inline-block mx-auto" style="width: 90px; height: 2px">
+
+                            <ul class="list-unstyled">
+                                <li class="sy-2"><asp:LinkButton CausesValidation="False" ID="lg" runat="server"  style="color: white; text-decoration: none" PostBackUrl="~/UserLoginPage.aspx" >Login</asp:LinkButton></li>
+                                <li class="sy-2"><asp:LinkButton CausesValidation="False" id="contact" runat="server" style="color: white; text-decoration: none" PostBackUrl="~/Contact_Us.aspx">Contact Us</asp:LinkButton></li>
+                                <li class="sy-2"><asp:LinkButton CausesValidation="False" ID="tandc" runat="server" style="color: white; text-decoration: none" PostBackUrl="~/termandcondition.aspx">Terms & Condition</asp:LinkButton></li>
+                                <li class="sy-2"><asp:LinkButton CausesValidation="False" id="home" runat="server" style="color: white; text-decoration: none" PostBackUrl="~/home.aspx">Home</asp:LinkButton></li>
+                            </ul>
+                        </div>
+                        <div class="col-md-3 mx-auto mb-4">
+                            <h5 class="text-uppercase font-weight-bold">Contact</h5>
+                            <hr class="bg-success mb-2 mt-e d-inline-block mx-auto" style="width: 75px; height: 2px">
+                            <ul class="list-unstyled">
+                                <li class="wesy"><i class="fa fa-home text-white mr-4 "></i>Karachi, street 3 PK</li>
+                                <li class="wesy"><i class="fas fa-envelope text-white mr-4"></i>
+                                    Theprovideriail.com</11>
+                                  
+                                <li class="wesy"><i class="fas fa-phone text-white mr-4"></i>+92123456789</li>
+                                <li class="wesy"><i class="fas fa-print text-white mr-4"></i>+002233467788</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-copyright text-center py-3" style="color: white;">
+                    <p style="color: white;">&copy 2022 All Right Reserved 
+                        
+                        <asp:LinkButton style="text-decoration: none;" CausesValidation="False" id="LinkButton10" runat="server" PostBackUrl="~/home.aspx">The E-Commerce.com</asp:LinkButton>
+                    </p>
+                    <div class="container">
+                        <div class="row py-4 d-flex align-items-center">
+                            <div class="col-md-12 text-center">
+                                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f text-white mr-4"></i></a>
+                                <a href="#"><i class="fab fa-snapchat text-white mr-4"></i></a>
+                                <a href="#"><i class="fab fa-twitter text-white mr-4"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp text-white mr-4"></i></a>
+                                <a href="#"><i class="fab fa-google-plus-g text-white mr-4"></i></a>
+                                <a href="#"><i class="fab fa-linkedin text-white mr-4"></i></a>
+                                <a href="#"><i class="fab fa-instagram text-white "></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <p>Designed By </p>
+                    <p>[Adil Waheed,Abdullah Iqbal, Rabia Essani,Summayya Khalid]</p>
+                    <h3>Number Of Visitor Counted </h3>
+                        <img src="https://www.easycounter.com/counter.php?1341233213"
+                            border="0" alt="Free Web Counters">
+                    <br>                 
+
+                </div>
+            </div>
+        </footer>
+    </form>
+    <script>
+        //Get the button
+        var mybutton = document.getElementById("myBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+                document.documentElement.style.scrollBehavior = "smooth";
+            } else {
+                mybutton.style.display = "none";
+                document.documentElement.style.scrollBehavior = "smooth";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+
+            //document.documentElement.style.scrollBehavior = "smooth";
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+        //Stop From Reloding Page When Click On Back to Top
+        $('#myBtn').click(function (e) {
+            e.preventDefault();
+            // Code goes here
+        });
+
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+
+        var preloader = document.getElementById('loading');
+        function myFunction() {
+            preloader.style.display ='none';
+        }
+
+
+    </script>
+
+</body>
+
+</html>

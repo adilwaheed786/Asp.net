@@ -1,0 +1,100 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+.button1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+/*products.aspx*/
+.proName {
+    padding:10px;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+}
+.desc {
+    text-align: left;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.proPrice {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    /*line-height: 17px;*/
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #01124d;
+}
+.drp {
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Qty {
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.Seller {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
+    color: #01124d;
+    font-weight: 600;
+    line-height: 20px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+.sel {
+    font-weight: 600;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.kard {
+    border-radius: 20px !important;
+    border: 2px solid #01124d !important;
+    margin:10px 0 10px 0;
+    /*margin-top: 50px;
+    margin-bottom: 50px;*/
+    /*padding: 20px;*/
+    /*background: rgb(222,222,223) !important;
+    background: linear-gradient(150deg, rgba(222,222,223,1) 46%, rgba(34,193,195,1) 62%) !important;*/
+}
+    .kard::before {
+        position: absolute;
+        content: '';
+        background: #283593;
+        height: 28px;
+        width: 28px;
+        top: 56.5px;
+        right: -0.5rem;
+        transform: rotate(152deg);
+    }
+
+
+
+    .kard::after {
+        position: absolute;
+        content: 'New';
+        top: 20px;
+        right: -20px;
+        padding: 0.5rem;
+        width: 9rem;
+        background: #3949ab;
+        color: white;
+        text-align: center;
+        font-family: 'Comic Sans MS';
+        box-shadow: 4px 4px 15px rgba(26, 35, 126, 0.2);
+        transform: rotate(45deg);
+    }
+.proimage {
+    border-radius: 18px 18px 0 0 !important;
+}

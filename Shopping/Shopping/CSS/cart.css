@@ -1,0 +1,78 @@
+﻿
+/*Cart*/
+.proNameViewCart {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #696e80;
+}
+.priceAlert {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #c70000;
+}
+.Price {
+    font-size: 17px;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+.Total {
+    font-size: 20px;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+.quantity {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #696e80;
+}
+.proDescription {
+    font-size: 15px;
+    line-height: 25px;
+    font-family: sans-serif;
+    font-weight: 600;
+}
+.proPriceSeller {
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 1000;
+    color: #91078a;
+}
+
+
+.priceGray {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: dimgray;
+}
+
+.priceGreen {
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 400;
+    color: #20bd99;
+}
+
+.buyNowBtn {
+    border-radius: 3px;
+    outline: 0;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    min-height: 22px;
+    padding: 10px 15px;
+    font-weight: 500;
+    background-color: #411185;
+    border: 1px solid #411185;
+    color: #fff;
+    width: 100%;
+}
