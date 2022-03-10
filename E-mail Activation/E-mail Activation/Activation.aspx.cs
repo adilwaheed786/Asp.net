@@ -11,6 +11,7 @@ namespace E_mail_Activation
 {
     public partial class Activation : System.Web.UI.Page
     {
+    
         string mycon = @"Data Source=DESKTOP-JJLR5BH\SQLEXPRESS;Initial Catalog=E-mailAuthentication;Integrated Security=True";
 
         protected void Page_Load(object sender, EventArgs e)
