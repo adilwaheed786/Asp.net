@@ -1,0 +1,103 @@
+﻿
+
+
+Department of Software Engineering
+
+
+
+
+SEN-321-SOFTWARE QUALITY ENGINEERING SPRING 2022
+
+COURSE INSTRUCTOR ENGR. MAJID KALEEM
+
+
+
+
+Assignment No. Assignment Title
+
+Course Learning Outcome
+
+Full Name Semester
+Submission Deadline
+
+02
+Use of Test Cases CLO-02
+“Demonstrate the use of software testing techniques/test cases appropriate for a given situation.”
+
+BSE 6 A 26th April 2022
+
+
+
+
+
+
+
+
+
+
+
+INSTRUCTIONS:
+
+USE ONLY TIMES NEW ROMAN SIZE 12 FONT.
+EACH HEADING (UNDERLINED, BOLD AND IN CAPITAL LETTERS) AND EXAMPLE MUST START FROM A NEW LINE.
+UPLOAD SOFTCOPY ON LMS AS A PDF FILE.
+DO NOT EDIT (THIS) ASSIGNMENT FILE GIVEN AS A PDF FILE.
+LAST PAGE OF YOUR ASSIGNMENT MUST CONTAIN SOURCES/REFERENCES (USE IEEEREFERENCING STYLE).
+NO MAKEUP ASSIGNMENTS WILL BE GIVEN & DATE WILL NOT BE EXTENDED.
+VIOLATION OF ANY OF THE INSTRUCTIONS MENTIONED HERE WILL RESULT IN MARKS DEDUCTION.
+
+
+BAHRIA UNIVERSITY (KARACHI CAMPUS) Software Quality Engineering (SEN-321) ASSIGNMENT # 2 – Spring 2022 Based on: CLO-3
+
+
+Class: BSE-6A
+
+Course Instructor:  ENGR. MAJID KALEEM
+
+Submission Deadline: 26th April 22
+
+Max Marks: 05
+
+
+
+1.   You are familiar with BU portal and online course registration. In this assignment you are required to identify at least 4 test case scenarios and for each scenario prepare at least five test cases. Use any appropriate test case template (or the sample given below) to complete this assignment. You may add more columns/rows if required for each test case. And for each test scenario, identify any suitable testing technique as well.	[5]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+G☺d Luck!
+PDF Focus .Net 8.4.5.25 trial. Have questions? Email us: support@sautinsoft.com

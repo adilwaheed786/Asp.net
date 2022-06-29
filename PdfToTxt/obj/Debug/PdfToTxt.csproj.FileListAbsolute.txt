@@ -1,0 +1,12 @@
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\bin\Debug\PdfToTxt.exe.config
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\bin\Debug\PdfToTxt.exe
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\bin\Debug\PdfToTxt.pdb
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\obj\Debug\PdfToTxt.csprojAssemblyReference.cache
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\obj\Debug\PdfToTxt.Properties.Resources.resources
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\obj\Debug\PdfToTxt.csproj.GenerateResource.cache
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\obj\Debug\PdfToTxt.exe
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\obj\Debug\PdfToTxt.pdb
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\bin\Debug\SautinSoft.PdfFocus.dll
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\bin\Debug\SautinSoft.PdfFocus.xml
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\obj\Debug\PdfToTxt.Form1.resources
+C:\Users\Spring2020\Desktop\Asp.net\PdfToTxt\obj\Debug\PdfToTxt.csproj.CopyComplete
